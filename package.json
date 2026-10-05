@@ -1,0 +1,49 @@
+{
+  "name": "test-1",
+  "version": "1.0.0",
+  "description": "Custom notification in Electron",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --publish never",
+    "publish": "electron-builder --publish always"
+  },
+  "author": "Ahmed Ehab",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhmedEhabAli/test-1.git"
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.9"
+  },
+  "devDependencies": {
+    "electron": "^44.5.1",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.ahmed.test1",
+    "productName": "Test1",
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "AhmedEhabAli",
+      "repo": "test-1"
+    }
+  },
+  "updateControlUrl": "https://raw.githubusercontent.com/AhmedEhabAli/test-1/main/update-config.json",
+  "updateRepo": {
+    "owner": "AhmedEhabAli",
+    "repo": "test-1"
+  }
+}
