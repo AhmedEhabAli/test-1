@@ -1,5 +1,5 @@
 {
-  "minimumRequiredVersion": "1.1.0",
-  "forceUpdate": false,
+  "minimumRequiredVersion": "1.2.0",
+  "forceUpdate": true,
   "messageAr": "نزل تحديث مهم، لازم تحدث عشان تكمل استخدام التطبيق."
 }
